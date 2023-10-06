@@ -1,0 +1,243 @@
+.main-vlog-container{
+    display: flex;
+}
+
+
+.vlogs-container{
+    width: 90%;
+    padding:50px;
+    padding-bottom: 100px;
+    height:max-content;
+    gap:50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.sub-nav{
+    width:10%;
+    height:max-content;
+}
+
+.sub-vlog-container-one{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.sub-vlog-container-one h1{
+    color: #1B1C1F;
+    font-family: League Spartan;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sub-vlog-container-one h4{
+    color: #000;
+    font-family: League Spartan;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sub-vlog-container-one h3{
+    margin-top: 50px;
+    color: #000;
+    font-family: League Spartan;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 52.8px */
+    width: 75%;
+}
+
+.author{
+    margin-top: 10px;
+    color: #000;
+    font-family: League Spartan;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+}
+
+.time{
+    margin-top: 10px;
+    color: #000;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+}
+
+.sub-vlog-container-one h5{
+    margin-top: 50px;
+    color: #000;
+    font-family: League Spartan;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sub-vlog-container-two{
+    width:60%;
+    height:80vh;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.arrow-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    cursor: pointer;
+}
+
+.switch{
+    cursor: pointer;
+}
+
+.sub-vlog-container-two-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+}
+
+.play{
+    background-image: url("../assets/play.png");
+    width: 110.457px;
+    height: 110.457px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.next-movie{
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    width:300px;
+    height: 200px;
+    background-color: black;
+    background-size: cover;
+    transition: background-position 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+.next-movie-desc{
+    margin-top: 20px;
+    color: #000;
+    font-family: League Spartan;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+}
+
+.next-movie-details{
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.next-movie-author{
+    color: #FFF;
+    font-family: League Spartan;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+}
+
+.next-movie-time{
+    color: #FFF;
+    font-family: League Spartan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+}
+
+
+@media(max-width:1000px){
+    .vlogs-container{
+        flex-direction: column;
+        height: max-content;
+    }
+    .sub-vlog-container-one{
+        width:80%;
+    }
+    .sub-vlog-container-two{
+        width:80%;
+        height:50vh;
+    }
+}
+
+@media(max-width:700px){
+    .sub-vlog-container-two{
+        height: 30vh;
+    }
+    .sub-vlog-container-one h1{
+        color: #1B1C1F;
+        font-family: League Spartan;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .sub-vlog-container-one h3{
+        margin-top: 50px;
+        color: #000;
+        font-family: League Spartan;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 52.8px */
+        width: 75%;
+    }
+    .next-movie{
+        width:100%;
+    }
+    .sub-vlog-container-one h4{
+        font-size: 20px;
+      
+    }
+    .sub-vlog-container-two-background{
+       background-size:cover;
+    }
+}
+
+@media(max-width:850px){
+    .vlogs-container{
+        width: 100%;
+        padding:50px;
+        padding-left:5px;
+        padding-bottom: 100px;
+        height:max-content;
+        gap:50px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+}
+
+@media(max-width:500px){
+    .sub-vlog-container-two{
+        height:20vh;
+    }
+    .arrow-container{
+        gap:10px;  
+    }
+}

@@ -1,0 +1,52 @@
+.vertical-navbar {
+    width: 200px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+  }
+   
+.body{
+    margin-top:150px;
+  }
+
+  .rule-icon{
+    font-size: 36px;
+  }
+  
+
+
+.vertical-navbar{
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+    width: 50px;
+  }
+
+.lines{
+    cursor: pointer;
+    border: 5px solid ;
+    background-color: white;
+    position:relative;
+    display: inline-block;
+  }
+
+.lines .linestext{
+  font-family: League Spartan;
+    position:absolute;
+    visibility:hidden;
+    top:-25px;
+    left:35px;
+    color:black;
+    font-size: 18px;
+    width: max-content;
+  }
+
+  .lines:hover .linestext{
+    visibility: visible;
+  }
+
+  @media(max-width:850px){
+    .vertical-navbar{
+      display: none;
+    }
+  }
