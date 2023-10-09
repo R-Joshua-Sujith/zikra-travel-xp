@@ -1,3 +1,7 @@
+.demo-section{
+    scroll-snap-align: start;
+}
+
 
 .main-demo-container{
     display: flex;
@@ -60,7 +64,7 @@ margin:0 auto;
 .demo-body{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap:50px;
 }
@@ -68,7 +72,7 @@ margin:0 auto;
 
 .demo-body-img{
     background: #FFDE00;
-    width: 602.515px;
+    width: 502.515px;
     height: 500px;
     flex-shrink: 0;
 }
@@ -112,7 +116,7 @@ margin:0 auto;
     height: 500px;
     border-top: 4px solid #FFDE00;
     border-left:4px solid #FFDE00;
-    width:20%;
+    width:15%;
     padding-top:30px;
     padding-left: 50px;
     height: max-content;
@@ -152,7 +156,15 @@ margin:0 auto;
 
 
 
-@media(max-width:1485px){
+@media(max-width:1285px){
+    .demo-body{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap:50px;
+    }
+    
     .story{
         width:60%;
         margin-bottom: 20px;

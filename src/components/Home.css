@@ -1,17 +1,31 @@
+.home-section{
+    scroll-snap-align: start;
+    background-color: black;
+}
+
 
 .background-image{
     width:100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+    
 }
 
 .home-container{
+    height: 100%;
     display: flex;
+    position: relative;
+}
+
+.sub-nav{
+    align-self: center;
 }
 
 .home-main-container{
     width: 100%;
+    
 }
 
 .sub-nav{
@@ -19,15 +33,18 @@
     height:max-content;
 }
 
+.fixed-nav{
+    position: sticky;
+}
 
 .container-1{
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 30vh;
     width:90%;
-}
+}   
 
 .container-1 > h1{
     color: #FFF;
@@ -46,7 +63,7 @@
     width:475.21px;
     height:3px;
     opacity: 0.5;
-background: #FFF;
+    background: #FFF;
 }
 
 .container-1 >h2{
@@ -69,7 +86,7 @@ background: #FFF;
     flex-direction: row;
 }
 
-.view-plan > li{
+.view-plan-list{
     margin-top: 0;
     color: #FFF;
     font-family: League Spartan;
@@ -77,6 +94,19 @@ background: #FFF;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    list-style: none;
+    border-radius: 0;
+
+}
+
+.view-plan-list:hover{
+    transform: scale(1.1);
+}
+
+.view-plan > li:first-child{
+    margin-right: 20px;
+    padding-right:20px ;
+    border-right: 1px solid white;
 }
 
 .view-plan >p:not(:last-child){
@@ -116,9 +146,9 @@ background: #FFF;
 }
 
 .arrow{
-    position: absolute;
+    position:absolute;
+    top:80%;
     right:5%;
-    bottom:10%;
     background-color: black;
     opacity: 0.5;
     color:white;

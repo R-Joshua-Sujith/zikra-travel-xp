@@ -7,7 +7,7 @@ import MainNav from "./MainNav";
 import "./Demo.css";
 const Demo = () => {
   return (
-    <div className="main-demo-container" id="about">
+    <div id="about" className="main-demo-container demo-section">
       <div className="sub-nav">
         <MainNav color="black" />
       </div>

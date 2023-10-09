@@ -8,10 +8,6 @@ import imageTwo from "../assets/bgImage-2.jpeg";
 import imageThree from "../assets/bgImage-3.jpeg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useState } from "react";
-import Vlogs from "./Vlogs";
-import Demo from "./Demo";
-import Contact from "./Contact";
-import Video from "./Video";
 
 const Home = () => {
   const arr = [imageOne, imageTwo, imageThree];
@@ -34,7 +30,7 @@ const Home = () => {
     }
   };
   return (
-    <div id="home">
+    <div className="home-section" id="home">
       <div
         className="background-image"
         style={{ backgroundImage: `url(${bgImage})` }}
@@ -44,21 +40,21 @@ const Home = () => {
             <MainNav color="white" />
           </div>
           <div className="home-main-container">
-            <Nav />
+            <Nav className="fixed-nav" />
             <div className="container-1">
               <h1>{name}</h1>
               <div className="line"></div>
               <h2>{desc}</h2>
               <div className="view-plan">
-                <li>View</li>
-                <li>Plan</li>
+                <li className="view-plan-list">View</li>
+                <li className="view-plan-list">Plan</li>
               </div>
               <button className="expore">Explore</button>
             </div>
           </div>
-        </div>
-        <div className="arrow" onClick={change}>
-          <ArrowForwardIcon />
+          <div className="arrow" onClick={change}>
+            <ArrowForwardIcon />
+          </div>
         </div>
       </div>
     </div>
