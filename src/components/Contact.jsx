@@ -6,7 +6,10 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <div id="contact" className="main-contact-container contact-section">
+    <div
+      id="contact-section-link"
+      className="main-contact-container contact-section"
+    >
       <div className="sub-nav">
         <MainNav color="white" />
       </div>
@@ -19,7 +22,11 @@ const Contact = () => {
         <div className="contactContainer-two">
           <input type="text" placeholder="Username" />
           <input type="text" placeholder="Email or Phone" />
-          <textarea type="textarea" placeholder="Share your thoughts" />
+          <textarea
+            className="contact-textarea"
+            type="textarea"
+            placeholder="Share your thoughts"
+          />
           <div className="form-verify">
             {/* <p>I agree the term of service</p> */}
             <button>SEND</button>

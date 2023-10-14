@@ -105,25 +105,22 @@
 
 .sub-vlog-container-two-animation{
     animation-name:mainMovie;
-    animation-duration:0.8s;
-    animation-timing-function: ease;
+    animation-duration:1s;
+    animation-timing-function:ease-out;
 }
 
 @keyframes mainMovie{
     0%{
         transform:translateY(0);
+        
     }
-    25%{
+    35%{
         opacity: 0;
-        transform: translateY(200px);
-    }
-    50%{
-        opacity: 0;
-        transform:translateY(800px);
+        transform: translateY(800px) scale(0.5);
     }
     100%{
         opacity: 1;
-        transform:translate(0,0);
+        transform:translate(0,0) scale(1) ;
     }
 }
 
@@ -177,7 +174,7 @@
 
 .next-movie-animation{
     animation-name:moving;
-    animation-duration:0.8s;
+    animation-duration:1s;
     animation-timing-function: ease;
 }
 

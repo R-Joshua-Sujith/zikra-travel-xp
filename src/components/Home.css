@@ -1,7 +1,9 @@
 .home-section{
     scroll-snap-align: start;
     background-color: black;
+    position: relative;
 }
+
 
 
 .background-image{
@@ -9,15 +11,21 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-image 0.5s ease-in-out;
+    transition: background-image 1s ease-in-out;
+
     
 }
+
+
 
 .home-container{
     height: 100%;
     display: flex;
     position: relative;
 }
+
+
+
 
 .sub-nav{
     align-self: center;

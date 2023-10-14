@@ -8,6 +8,7 @@ import imageTwo from "../assets/vlogImage-2.png";
 import { useState } from "react";
 import "../App.css";
 import "./Vlogs.css";
+import { useSelector } from "react-redux";
 
 const Vlogs = () => {
   const [animation, setAnimation] = useState(false);
@@ -82,7 +83,7 @@ const Vlogs = () => {
       switchColor();
       setTimeout(() => {
         setAnimation(false);
-      }, 800);
+      }, 1000);
     }
   };
   const dec = () => {
@@ -95,7 +96,7 @@ const Vlogs = () => {
       switchColor();
       setTimeout(() => {
         setAnimation(false);
-      }, 800);
+      }, 1000);
     }
   };
 
@@ -143,9 +144,9 @@ const Vlogs = () => {
           <iframe
             src={vlog.src}
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
             className="sub-vlog-container-two-background"
             // style={{ backgroundImage: `url(${vlog.img})` }}
           >

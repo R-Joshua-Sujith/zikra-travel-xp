@@ -140,7 +140,7 @@
     color:white;
 }
 
-.register-form input[type="text"],input[type="password"]{
+.register-form input[type="text"],input[type="password"],[type="number"]{
     padding:5px;
     padding-left: 5%;
     display: block;
@@ -191,6 +191,13 @@
     border: none;
     margin-top: 20px;
     height: 50px;
+}
+
+.regloader{
+    width:85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .continue{

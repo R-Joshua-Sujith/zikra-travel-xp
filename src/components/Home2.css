@@ -1,0 +1,122 @@
+.home-2-container{
+    /* width:1920px;
+    height:1002px; */
+    height:100vh;
+    width: max-width;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+.main{
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    z-index: 4;
+}
+
+.one{
+    background-repeat: no-repeat;
+    height: 562px;
+    width: 567px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+}
+
+.one-animation {
+    animation-name: one-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transform-origin:center; /* Set the transform origin to the center of the element */
+}  
+
+  
+@keyframes one-animation {
+    0% {
+
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+.two{
+
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 809px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+}
+
+.two-animation {
+    animation-name: two-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    transform-origin:center; /* Set the transform origin to the center of the element */
+}  
+
+  
+@keyframes two-animation {
+    0% {
+      
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+ 
+      transform: translate(-50%, -50%) rotateZ(-360deg);
+    }
+  }
+
+
+.three{
+    background-repeat: no-repeat;
+    height:2277px;
+    width:2301px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:0;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+}
+
+ .three-animation {
+    animation-name: three-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    transform-origin:center; 
+}  
+
+
+.home-2-main-container{
+  display: flex;
+
+}
+
+
+  
+@keyframes three-animation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }  
+
